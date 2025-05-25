@@ -1,0 +1,58 @@
+{
+  "scan_info": {
+    "date": "2025-05-25T17:31:41.277224",
+    "target": "C:\\Users\\samira\\Desktop\\Seco"
+  },
+  "results": [
+    {
+      "filename": "C:\\Users\\samira\\Desktop\\Seco\\seco.py",
+      "line_number": 11,
+      "issue_severity": "LOW",
+      "issue_confidence": "HIGH",
+      "issue_text": "Consider possible security implications associated with the subprocess module.",
+      "test_id": "B404",
+      "test_name": "blacklist",
+      "code": "10 import os\n11 import subprocess\n12 import sys\n"
+    },
+    {
+      "filename": "C:\\Users\\samira\\Desktop\\Seco\\seco.py",
+      "line_number": 56,
+      "issue_severity": "LOW",
+      "issue_confidence": "HIGH",
+      "issue_text": "Starting a process with a partial executable path",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path",
+      "code": "55         try:\n56             subprocess.run([\"python\", \"-m\", \"bandit\", \"--version\"], capture_output=True, text=True, check=True)\n57         except (subprocess.SubprocessError, FileNotFoundError):\n"
+    },
+    {
+      "filename": "C:\\Users\\samira\\Desktop\\Seco\\seco.py",
+      "line_number": 56,
+      "issue_severity": "LOW",
+      "issue_confidence": "HIGH",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true",
+      "code": "55         try:\n56             subprocess.run([\"python\", \"-m\", \"bandit\", \"--version\"], capture_output=True, text=True, check=True)\n57         except (subprocess.SubprocessError, FileNotFoundError):\n"
+    },
+    {
+      "filename": "C:\\Users\\samira\\Desktop\\Seco\\seco.py",
+      "line_number": 76,
+      "issue_severity": "LOW",
+      "issue_confidence": "HIGH",
+      "issue_text": "Starting a process with a partial executable path",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path",
+      "code": "75                 # Run bandit with JSON output format using Python module\n76                 result = subprocess.run(\n77                     [\"python\", \"-m\", \"bandit\", \"-r\", str(self.target_path), \"-f\", \"json\"],\n78                     capture_output=True,\n79                     text=True,\n80                     check=False\n81                 )\n82                 progress.update(task, completed=100)\n"
+    },
+    {
+      "filename": "C:\\Users\\samira\\Desktop\\Seco\\seco.py",
+      "line_number": 76,
+      "issue_severity": "LOW",
+      "issue_confidence": "HIGH",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true",
+      "code": "75                 # Run bandit with JSON output format using Python module\n76                 result = subprocess.run(\n77                     [\"python\", \"-m\", \"bandit\", \"-r\", str(self.target_path), \"-f\", \"json\"],\n78                     capture_output=True,\n79                     text=True,\n80                     check=False\n81                 )\n82                 progress.update(task, completed=100)\n"
+    }
+  ]
+}

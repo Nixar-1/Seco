@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <title>Seco Security Scan Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                h1 { color: #2c3e50; }
+                table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #2c3e50; color: white; }
+                tr:nth-child(even) { background-color: #f2f2f2; }
+                .info { background-color: #eef; padding: 10px; border-radius: 5px; }
+            </style>
+        </head>
+        <body>
+            <h1>Seco Security Scan Report</h1>
+            <div class="info">
+                <p><strong>Date:</strong> 2025-05-25 17:32:10</p>
+                <p><strong>Target:</strong> C:\Users\samira\Desktop\Seco</p>
+                <p><strong>Total Issues:</strong> 5</p>
+            </div>
+            
+            <h2>Issues Found</h2>
+            <table>
+                <tr>
+                    <th>Severity</th>
+                    <th>Confidence</th>
+                    <th>File</th>
+                    <th>Line</th>
+                    <th>Issue</th>
+                    <th>Test ID</th>
+                </tr>
+                
+            <tr>
+                <td style="color: green; font-weight: bold;">LOW</td>
+                <td>HIGH</td>
+                <td>C:\Users\samira\Desktop\Seco\seco.py</td>
+                <td>11</td>
+                <td>Consider possible security implications associated with the subprocess module.</td>
+                <td>B404</td>
+            </tr>
+            
+            <tr>
+                <td style="color: green; font-weight: bold;">LOW</td>
+                <td>HIGH</td>
+                <td>C:\Users\samira\Desktop\Seco\seco.py</td>
+                <td>56</td>
+                <td>Starting a process with a partial executable path</td>
+                <td>B607</td>
+            </tr>
+            
+            <tr>
+                <td style="color: green; font-weight: bold;">LOW</td>
+                <td>HIGH</td>
+                <td>C:\Users\samira\Desktop\Seco\seco.py</td>
+                <td>56</td>
+                <td>subprocess call - check for execution of untrusted input.</td>
+                <td>B603</td>
+            </tr>
+            
+            <tr>
+                <td style="color: green; font-weight: bold;">LOW</td>
+                <td>HIGH</td>
+                <td>C:\Users\samira\Desktop\Seco\seco.py</td>
+                <td>76</td>
+                <td>Starting a process with a partial executable path</td>
+                <td>B607</td>
+            </tr>
+            
+            <tr>
+                <td style="color: green; font-weight: bold;">LOW</td>
+                <td>HIGH</td>
+                <td>C:\Users\samira\Desktop\Seco\seco.py</td>
+                <td>76</td>
+                <td>subprocess call - check for execution of untrusted input.</td>
+                <td>B603</td>
+            </tr>
+            
+            </table>
+        </body>
+        </html>
+        
