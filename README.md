@@ -1,77 +1,118 @@
 # Seco - Security Code Scanner
 
-Seco is a simple CLI tool that performs security code analysis on your projects. It helps developers identify potential security vulnerabilities in their codebase directly from the terminal.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-## Features
+Seco is a powerful command-line security analysis tool designed to identify potential security vulnerabilities in your Python projects. Built with a focus on simplicity and efficiency, it helps developers maintain secure codebases through automated static analysis.
 
-- Scan code for security vulnerabilities using static analysis
-- Display results in a beautiful, colored terminal output
-- Export reports in JSON or HTML format
-- Simple, intuitive command-line interface
+## 🚀 Key Features
 
-## Installation
+- **Static Security Analysis**: Comprehensive scanning for common security vulnerabilities
+- **Beautiful CLI Output**: Clear, color-coded terminal output for easy interpretation
+- **Flexible Reporting**: Export findings in JSON or HTML formats
+- **User-Friendly Interface**: Simple and intuitive command-line experience
+- **High Performance**: Quick scanning with minimal system resource usage
 
+## 📋 Prerequisites
+
+- Python 3.6 or higher
+- pip package manager
+
+## 🔧 Installation
+
+1. Clone the repository:
 ```bash
-# Clone the repository
-git clone https://github.com/Nixar-1
-cd seco
+git clone https://github.com/Nixar-1/Seco.git
+cd Seco
+```
 
-# Install dependencies
+2. Install dependencies:
+```bash
 pip install -r requirements.txt
+```
 
-# Make the script executable (Linux/Mac)
+3. Make the script executable (Linux/Mac):
+```bash
 chmod +x seco.py
 ```
 
-## Usage
+## 💻 Usage
 
-Basic usage:
-
+### Basic Scan
 ```bash
 python seco.py /path/to/your/project
 ```
 
-Export results to a file:
-
+### Export Results
 ```bash
-# Export to JSON
+# JSON export
 python seco.py /path/to/your/project --output json
 
-# Export to HTML with a specific filename
+# HTML report
 python seco.py /path/to/your/project --output html --file report.html
 ```
 
 ### Command-line Options
 
-- `path`: The path to the directory to scan (required)
-- `--output, -o`: Output format for the report (`json` or `html`)
-- `--file, -f`: Output file path for the report
+| Option | Description |
+|--------|-------------|
+| `path` | Directory to scan (required) |
+| `--output, -o` | Report format (`json` or `html`) |
+| `--file, -f` | Custom output file path |
 
-## How It Works
+## ⚙️ How It Works
 
-Seco uses Bandit, a comprehensive Python security analysis tool, to perform static code analysis. It identifies common security issues like:
+Seco leverages Bandit, a robust Python security analysis tool, to perform comprehensive static code analysis. It detects various security issues, including:
 
-- Hardcoded passwords and secrets
-- SQL injection vulnerabilities
-- Command injection vulnerabilities
-- Use of insecure functions
-- And more...
+- 🔒 Hardcoded credentials and secrets
+- 💉 SQL injection vulnerabilities
+- 🛡️ Command injection vulnerabilities
+- ⚠️ Usage of deprecated or insecure functions
+- 🔍 Other common security anti-patterns
 
-The results are presented in an easy-to-read format with color-coding for severity levels.
+Results are presented with intuitive severity-based color coding for quick assessment.
 
-## Future Enhancements
+## 🗺️ Roadmap
 
-- Scan dependencies with pip-audit
-- Partial auto-fixing of security issues
-- Support for additional languages (JavaScript, etc.)
-- Integration with CI/CD pipelines
-- Custom rule configuration
+- [ ] Integration with pip-audit for dependency scanning
+- [ ] Automated security issue remediation
+- [ ] Support for JavaScript and other languages
+- [ ] CI/CD pipeline integration
+- [ ] Customizable rule configuration
+- [ ] Performance optimizations
 
-## Requirements
+## 📦 Dependencies
 
-- Python 3.6+
-- Bandit
-- Rich
+Core dependencies include:
+- [Bandit](https://github.com/PyCQA/bandit) - Security analysis
+- [Rich](https://github.com/Textualize/rich) - Terminal formatting
+
+## 🤝 Contributing
+
+We welcome contributions! To contribute:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on our code of conduct and development process.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📬 Contact
+
+Nixar-1 - [@GitHub](https://github.com/Nixar-1)
+
+Project Link: [https://github.com/Nixar-1/Seco](https://github.com/Nixar-1/Seco)
+
+---
+
+<p align="center">Made with ❤️ by Nixar-1</p>
 
 ## License
 
