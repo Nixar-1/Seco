@@ -6,6 +6,8 @@
 
 Seco is a powerful command-line security analysis tool designed to identify potential security vulnerabilities in your Python projects. Built with a focus on simplicity and efficiency, it helps developers maintain secure codebases through automated static analysis.
 
+> ⚠️ **IMPORTANT NOTICE**: This project is currently in active development and may contain bugs or incomplete features. While we strive for accuracy, security analysis results should be manually verified. Use in production environments at your own risk.
+
 ## 🚀 Key Features
 
 - **Static Security Analysis**: Comprehensive scanning for common security vulnerabilities
@@ -25,7 +27,6 @@ Seco is a powerful command-line security analysis tool designed to identify pote
 ```bash
 git clone https://github.com/Nixar-1/Seco.git
 cd Seco
-```
 
 2. Install dependencies:
 ```bash
@@ -81,6 +82,36 @@ Results are presented with intuitive severity-based color coding for quick asses
 - [ ] CI/CD pipeline integration
 - [ ] Customizable rule configuration
 - [ ] Performance optimizations
+## 📌 Future Plans
+
+### Near-term Goals (0-3 months)
+- [ ] Integration with pip-audit for dependency vulnerability scanning
+- [ ] Basic automated fixes for common security issues
+- [ ] Improved reporting format with detailed fix suggestions
+- [ ] Better handling of false positives
+
+### Mid-term Goals (3-6 months)
+- [ ] Support for additional languages:
+  - [ ] JavaScript (via ESLint security plugins)
+  - [ ] TypeScript
+  - [ ] Java
+  - [ ] Go
+- [ ] Integration with semgrep for advanced pattern matching
+- [ ] Custom rule creation interface
+- [ ] CI/CD pipeline integration (GitHub Actions, GitLab CI)
+
+### Long-term Goals (6+ months)
+- [ ] Visual Studio Code extension
+  - [ ] Real-time security scanning
+  - [ ] In-editor fix suggestions
+  - [ ] Custom rule management
+- [ ] Interactive terminal user interface (TUI)
+- [ ] Automated vulnerability fixes and PRs
+- [ ] Machine learning-based false positive detection
+- [ ] Integration with other security tools and platforms
+- [ ] Performance optimizations for large codebases
+
+> 💡 **Note**: These plans are subject to change based on community feedback and project priorities. Contributions and suggestions are welcome!
 
 ## 📦 Dependencies
 
