@@ -5,8 +5,24 @@
 > - APIs and command-line interfaces might be unstable
 > - Test coverage may be incomplete
 > - Documentation might lag behind implementation
+>
+> Last updated: 2025-05-25 20:50:23 UTC
 
-First off, thank you for considering contributing to Seco! It's people like you that make Seco such a great tool.
+## 📋 Table of Contents
+
+- [Code of Conduct](#code-of-conduct)
+- [How Can I Contribute?](#how-can-i-contribute)
+  - [Reporting Bugs](#reporting-bugs)
+  - [Suggesting Enhancements](#suggesting-enhancements)
+  - [Pull Requests](#pull-requests)
+- [Development Process](#development-process)
+  - [Code Style](#code-style)
+  - [Running Tests](#running-tests)
+  - [Documentation](#documentation)
+- [Project Structure](#project-structure)
+- [Git Commit Messages](#git-commit-messages)
+- [Recognition](#recognition)
+- [Questions?](#questions)
 
 ## Code of Conduct
 
@@ -56,3 +72,75 @@ If you have a suggestion for a new feature or an enhancement to existing functio
 ```bash
 git clone https://github.com/Nixar-1/Seco.git
 cd Seco
+```
+
+2. Create a virtual environment and activate it:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install development dependencies:
+```bash
+pip install -r requirements-dev.txt
+```
+
+### Code Style
+
+We use Black for code formatting. Please ensure your code follows this style:
+
+- Maximum line length of 88 characters
+- Use double quotes for strings
+- Follow PEP 8 guidelines
+
+To format your code:
+
+```bash
+black .
+```
+
+### Running Tests
+
+```bash
+pytest
+```
+
+### Documentation
+
+- Update the README.md if you change any user-facing functionality
+- Add docstrings to new functions and classes
+- Comment complex code sections
+
+## Project Structure
+
+```
+seco/
+├── seco.py          # Main script
+├── tests/           # Test suite
+├── requirements.txt # Production dependencies
+└── docs/           # Documentation
+```
+
+## Git Commit Messages
+
+- Use the present tense ("Add feature" not "Added feature")
+- Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
+- Reference issues and pull requests liberally after the first line
+- Consider starting the commit message with an applicable emoji:
+  - 🚀 :rocket: when adding features
+  - 🐛 :bug: when fixing bugs
+  - 📝 :memo: when adding documentation
+  - 🎨 :art: when improving code structure
+  - ⚡️ :zap: when improving performance
+  - 🔒 :lock: when dealing with security
+
+## Recognition
+
+Contributors will be recognized in our README.md and project documentation. Thank you for your contributions!
+
+## Questions?
+
+Feel free to create an issue with your question or contact the maintainer directly through GitHub.
+
+<p align="center">Remember that this is an open source project. Consider the people who will read your code, and make it look nice for them! 😊</p>
+<p align="center">Last updated: 2025-05-25 20:50:23 UTC</p>
