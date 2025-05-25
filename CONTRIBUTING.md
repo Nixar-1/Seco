@@ -1,5 +1,11 @@
 # Contributing to Seco
 
+> ⚠️ **Development Status**: Seco is currently in active development (alpha stage). The codebase is rapidly evolving, and breaking changes may occur. Contributors should be aware that:
+> - Features may be incomplete or change significantly
+> - APIs and command-line interfaces might be unstable
+> - Test coverage may be incomplete
+> - Documentation might lag behind implementation
+
 First off, thank you for considering contributing to Seco! It's people like you that make Seco such a great tool.
 
 ## Code of Conduct
